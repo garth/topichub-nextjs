@@ -1,28 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+# Topic Hub - Next.js
 
-## Getting Started
+## Start
 
-First, run the development server:
-
-```bash
+```
 yarn start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Build
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+yarn build
+```
 
-## Learn More
+## Build output
 
-To learn more about Next.js, take a look at the following resources:
+```
+yarn build
+yarn run v1.22.0
+$ next build
+Creating an optimized production build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Compiled successfully.
 
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
+Automatically optimizing pages
 
-## Deploy on ZEIT Now
+Page                            Size     First Load
+┌ ○ /                           4.53 kB     78.6 kB
+├   /_app                       4.41 kB     74.1 kB
+├ ○ /topic/[topicId]            2.71 kB     76.8 kB
+└ ○ /topics                     5.3 kB      79.4 kB
++ shared by all                 74.1 kB
+  ├ static/_buildManifest.js    61 B
+  ├ static/pages/_app.js        4.41 kB
+  ├ chunks/commons.89c9d1.js    24.2 kB
+  ├ chunks/framework.ad13ec.js  39.9 kB
+  ├ runtime/main.c575f1.js      4.74 kB
+  └ runtime/webpack.91b117.js   746 B
 
-The easiest way to deploy your Next.js app is to use the [ZEIT Now Platform](https://zeit.co/) from the creators of Next.js.
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+●  (SSG)     automatically generated as static HTML + JSON (uses getStaticProps)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Done in 12.33s.
+```
+
+## Lines of code
+
+```
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+TypeScript                       2             13              0            225
+CSS                              1              3              0              4
+-------------------------------------------------------------------------------
+SUM:                             3             16              0            229
+-------------------------------------------------------------------------------
+```
